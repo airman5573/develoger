@@ -16,5 +16,25 @@ function typology_child_load_scripts() {
 	wp_enqueue_style('typology_child_style');
 }
 
+function dev_set_codeblock_language_list() {
+	return array(
+		"python" => "Python",
+		"javascript" => "JavaScript",
+		"typescript" => "Typescript",
+		"kotlin"	 => "Kotlin",
+		"swift"	 => "Swift",
+        "bash" => "Bash",
+        "html" => "HTML",
+        "json" => "JSON",
+        "markdown" => "Markdown",
+        "php" => "PHP",
+        "jsx" => "React JSX",
+        "sass" => "Sass",
+        "sql" => "SQL",
+        "svg" => "SVG",
+        "xml" => "XML",
+    );
+}
+add_filter( 'mkaz_code_syntax_language_list', 'dev_set_codeblock_language_list');
 
 ?>
