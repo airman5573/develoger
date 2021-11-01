@@ -38,7 +38,9 @@ function dev_set_codeblock_language_list() {
         "svg" => "SVG",
 		"csv" => "csv",
         "xml" => "XML",
-		"log" => "Log file"
+		"log" => "Log file",
+		"dart" => "Dart",
+		"git" => "Git"
     );
 }
 add_filter( 'mkaz_code_syntax_language_list', 'dev_set_codeblock_language_list');
