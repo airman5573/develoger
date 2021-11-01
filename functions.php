@@ -36,8 +36,4 @@ function dev_set_codeblock_language_list() {
     );
 }
 add_filter( 'mkaz_code_syntax_language_list', 'dev_set_codeblock_language_list');
-
-// 사이즈가 큰 이미지 원본으로 올리기
-add_filter( 'big_image_size_threshold', '__return_false' );
-
 ?>
