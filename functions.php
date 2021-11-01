@@ -21,6 +21,7 @@ function dev_set_codeblock_language_list() {
 		"python" => "Python",
 		"javascript" => "JavaScript",
 		"typescript" => "Typescript",
+		"jsstacktrace" => "JS stack trace",
 		"kotlin"	 => "Kotlin",
 		"swift"	 => "Swift",
         "bash" => "Bash",
@@ -37,6 +38,7 @@ function dev_set_codeblock_language_list() {
         "svg" => "SVG",
 		"csv" => "csv",
         "xml" => "XML",
+		"log" => "Log file"
     );
 }
 add_filter( 'mkaz_code_syntax_language_list', 'dev_set_codeblock_language_list');
