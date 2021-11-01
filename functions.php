@@ -16,6 +16,11 @@ function typology_child_load_scripts() {
 	wp_enqueue_style('typology_child_style');
 }
 
+function dev_load_admin_style() {
+    wp_enqueue_style( 'admin_css', get_template_directory_uri() . '/admin-style.css', false, '1.0.0' );
+}
+add_action( 'admin_enqueue_scripts', 'dev_load_admin_style' );
+
 function dev_set_codeblock_language_list() {
 	return array(
 		"python" => "Python",
