@@ -37,10 +37,6 @@ function dev_set_codeblock_language_list() {
 }
 add_filter( 'mkaz_code_syntax_language_list', 'dev_set_codeblock_language_list');
 
-
-function gc_big_image_size_threshold( $threshold ) {
-    return 9999; // new threshold
-}
-add_filter('big_image_size_threshold', 'gc_big_image_size_threshold', 100, 1);
+add_filter('big_image_size_threshold', '__return_false');
 
 ?>
