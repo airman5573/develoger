@@ -29,9 +29,13 @@ function dev_set_codeblock_language_list() {
         "markdown" => "Markdown",
         "php" => "PHP",
         "jsx" => "React JSX",
+		"tsx" => "React TSX",
+		"regex" => "Regex",
         "sass" => "Sass",
+		"cpp" => "C++",
         "sql" => "SQL",
         "svg" => "SVG",
+		"csv" => "csv",
         "xml" => "XML",
     );
 }
