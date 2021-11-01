@@ -37,6 +37,6 @@ function dev_set_codeblock_language_list() {
 }
 add_filter( 'mkaz_code_syntax_language_list', 'dev_set_codeblock_language_list');
 
-add_filter('big_image_size_threshold', '__return_false');
+add_filter('big_image_size_threshold', 0);
 
 ?>
